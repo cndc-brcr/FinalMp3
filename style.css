@@ -1,0 +1,143 @@
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, steelblue, skyblue);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the Circular Login Icon */
+.login-link {
+  margin-left: 500px;
+  text-decoration: none; /* Remove underline */
+  position: relative;
+  top: -10px; /* Adjust vertical position */
+  right: 20px; /* Adjust horizontal position */
+}
+
+.login-icon {
+  width: 45px; /* Circle size */
+  height: 45px; /* Circle size */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image fits the circle */
+  transition: transform 0.3s ease;
+}
+
+.login-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+}
+
+/* Album Grid Styles */
+.album-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.album {
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.album img {
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.album:hover img {
+  transform: scale(1.1);
+}
+
+.album-title {
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Song List Styles */
+.songs {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.85);
+  width: 150px;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.song {
+  margin: 5px 0;
+  padding: 5px;
+  color: blue;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.song:hover {
+  background: #f1f1f1;
+}
+
+button {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #feb47b;
+}
+
+audio {
+  width: 97%;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+

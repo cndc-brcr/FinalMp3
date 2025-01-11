@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rhythm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>The Rhythm
+    <a href="login.html" class="login-link"><img src="/Images/wizarding-world-portrait.png" alt="Login" class="login-icon"></a>
+    </h1>
+
+    <!-- Album 1 -->
+    <div class="album" onclick="toggleSongs('album1')">
+      <img src="Images/bini.jpg" alt="Album 1">
+      <div class="album-title">BINI</div>
+    </div>
+    <div class="songs" id="album1">
+      <div class="song">
+        <span>Lagi</span>
+        <button onclick="playSong('Audios/BINI - _Lagi_ Color-coded Lyrics.mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Salamin Salamin</span>
+        <button onclick="playSong('Audios/BINI - Salamin Salamin (Lyrics).mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Pantropiko</span>
+        <button onclick="playSong('Audios/bini_pantropiko_lyrics_mp3_30602.mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Huwag Muna Tayong Umuwi</span>
+        <button onclick="playSong('Audios/Huwag Muna Tayong Umuwi - BINI (Color Coded Lyrics).mp3')">Play</button>
+      </div>
+    </div>
+
+    <!-- Album 2 -->
+    <div class="album" onclick="toggleSongs('album2')">
+      <img src="Images/jhin.jpg" alt="Album 2">
+      <div class="album-title">Jhin</div>
+    </div>
+    <div class="songs" id="album2">
+      <div class="song">
+        <span>Blue Butterflies</span>
+        <button onclick="playSong('Audios/JHIN - Blue Butterflies.mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Heavenmade</span>
+        <button onclick="playSong('Audios/JHIN - Heavenmade (Official Music Video).mp3')">Play</button>
+      </div>
+    </div>
+
+    <!-- Album 3 -->
+    <div class="album" onclick="toggleSongs('album3')">
+      <img src="Images/lukechiang.jpg" alt="Album 3">
+      <div class="album-title">Luke Chiang</div>
+    </div>
+    <div class="songs" id="album3">
+      <div class="song">
+        <span>Home</span>
+        <button onclick="playSong('Audios/[Lyrics] Luke Chiang - Home.mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Paragraphs</span>
+        <button onclick="playSong('Audios/[Lyrics] Paragraphs - Luke Chiang.mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Used to Me</span>
+        <button onclick="playSong('Audios/luke chiang  - used to me (lyric video).mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>May I Ask</span>
+        <button onclick="playSong('Audios/Luke Chiang - May I Ask (ft. Alexis Kim)  Lyric Video.mp3')">Play</button>
+      </div>
+    </div>
+
+    <!-- Album 4 -->
+    <div class="album" onclick="toggleSongs('album4')">
+      <img src="Images/pink$weats.jpg" alt="Album 4">
+      <div class="album-title">Pink$weats</div>
+    </div>
+    <div class="songs" id="album4">
+      <div class="song">
+        <span>Run Through Fire</span>
+        <button onclick="playSong('Audios/Pink Sweat$ - Run Through Fire [Official Audio].mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Guitar</span>
+        <button onclick="playSong('Audios/Pink Sweat$ - Guitar [Official Audio].mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Coffee</span>
+        <button onclick="playSong('Audios/Pink Sweat$ - Coffee (Lyrics).mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Call Me</span>
+        <button onclick="playSong('Audios/Pink Sweat$ - Call Me.mp3')">Play</button>
+      </div>
+    </div>
+
+  
+      <!-- Album 5 -->
+    <div class="album" onclick="toggleSongs('album5')">
+      <img src="Images/shae.jpg" alt="Album 5">
+      <div class="album-title">Shae</div>
+    </div>
+    <div class="songs" id="album5">
+      <div class="song">
+        <span>Simple</span>
+        <button onclick="playSong('Audios/SIMPLE.mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Anybody</span>
+        <button onclick="playSong('Audios/shae, WIMY - Anybody (official lyric video).mp3')">Play</button>
+      </div>
+      <div class="song">
+        <span>Half of Me</span>
+        <button onclick="playSong('Audios/shae - Half of Me (official lyric video) [mvM0hLbLMzw].mp3')">Play</button>
+      </div>
+    </div>
+    
+  <audio id="audioPlayer" controls>
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
